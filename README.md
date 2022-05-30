@@ -2,4 +2,4 @@
 A discord token logger made in rust.
 
 # Documentation
-TODO
+You can find the documentation [here](https://autist69420.github.io/nyoom/)
